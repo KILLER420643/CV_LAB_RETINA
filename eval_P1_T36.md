@@ -1,5 +1,5 @@
 1RUA24CSE0035, 1RUA24CSE0028, 1RUA24CSE00103, 1RUA24CSE0091, 1RUA24CSE0087
-# Evaluation - P1 - T01
+# Evaluation - P1 - T36
 Images evaluated: 100 (low: `data/LOL-v2/Real_captured/Test/Low`, reference: `data/LOL-v2/Real_captured/Test/Normal`), resized to max side 600px.
 
 ## 1. PSNR / SSIM / LPIPS / NIQE / latency / noise / edge preservation (mean over images)
