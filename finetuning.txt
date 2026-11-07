@@ -1,0 +1,37 @@
+(venv) PS D:\Project1\lowlight_ai> python scripts/train.py --low data/LOL/our485/low --high data/LOL/our485/high --init weights/zerodce.pth --epochs 35 --lr 5e-5
+epoch 1/35 train_loss 1.5596 val_loss 0.4472
+epoch 2/35 train_loss 1.4615 val_loss 0.3596
+epoch 3/35 train_loss 1.3484 val_loss 0.3963
+epoch 4/35 train_loss 0.8567 val_loss 0.4176
+epoch 5/35 train_loss 1.2177 val_loss 0.4324
+epoch 6/35 train_loss 1.0612 val_loss 0.4406
+epoch 7/35 train_loss 1.2576 val_loss 0.3967
+epoch 8/35 train_loss 1.0572 val_loss 0.3436
+epoch 9/35 train_loss 0.6776 val_loss 0.4026
+epoch 10/35 train_loss 1.3971 val_loss 0.4111
+epoch 11/35 train_loss 1.4267 val_loss 0.3827
+epoch 12/35 train_loss 1.4711 val_loss 0.3724
+epoch 13/35 train_loss 1.0068 val_loss 0.4196
+epoch 14/35 train_loss 0.8929 val_loss 0.3801
+epoch 15/35 train_loss 1.2110 val_loss 0.3628
+epoch 16/35 train_loss 1.7682 val_loss 0.3372
+epoch 17/35 train_loss 1.0724 val_loss 0.3928
+epoch 18/35 train_loss 1.1502 val_loss 0.4215
+epoch 19/35 train_loss 1.0176 val_loss 0.4166
+epoch 20/35 train_loss 1.0755 val_loss 0.4277
+epoch 21/35 train_loss 1.3292 val_loss 0.3637
+epoch 22/35 train_loss 0.9317 val_loss 0.4530
+epoch 23/35 train_loss 1.3823 val_loss 0.3874
+epoch 24/35 train_loss 1.3488 val_loss 0.4177
+epoch 25/35 train_loss 1.2385 val_loss 0.4193
+epoch 26/35 train_loss 1.1073 val_loss 0.4993
+epoch 27/35 train_loss 1.0576 val_loss 0.3957
+epoch 28/35 train_loss 1.0875 val_loss 0.3719
+epoch 29/35 train_loss 1.2649 val_loss 0.4152
+epoch 30/35 train_loss 0.7968 val_loss 0.3412
+epoch 31/35 train_loss 1.0536 val_loss 0.3496
+epoch 32/35 train_loss 1.1663 val_loss 0.3809
+epoch 33/35 train_loss 1.3575 val_loss 0.3290
+epoch 34/35 train_loss 0.9767 val_loss 0.3723
+epoch 35/35 train_loss 1.0722 val_loss 0.3230
+saved weights/zerodce.pth

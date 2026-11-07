@@ -1,0 +1,10 @@
+(venv) PS D:\Project1\lowlight_ai> python -m pytest tests/
+============================================ test session starts ============================================
+platform win32 -- Python 3.12.1, pytest-9.2.0, pluggy-1.7.0
+rootdir: D:\Project1\lowlight_ai
+plugins: anyio-4.16.0, platformdirs-4.14.5
+collected 7 items                                                                                            
+
+tests\test_smoke.py .......                                                                            [100%]
+
+============================================= 7 passed in 3.00s =============================================

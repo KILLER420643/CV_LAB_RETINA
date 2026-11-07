@@ -1,0 +1,10 @@
+numpy
+opencv-python-headless
+scikit-image
+pandas
+tabulate
+gradio>=5
+torch
+torchvision
+lpips
+# optional NIQE: pyiqa
