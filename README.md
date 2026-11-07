@@ -26,5 +26,7 @@ pytest tests/       # smoke tests (modes, tiny/huge/black/white inputs)
 ## Deploy
 Push to a Hugging Face Space (Gradio SDK) or Render/Railway with the Dockerfile. No secrets are used.
 
+**Render:** the repo includes `render.yaml` (Blueprint) and `Dockerfile`. In Render, choose *New → Blueprint*, connect the GitHub repo, and apply. Or *New → Web Service* → runtime *Docker*, plan with at least 2 GB RAM (torch needs it), health check path `/`. The app reads the `PORT` env var that Render injects.
+
 ## Weights
 `weights/zerodce.pth` = official Zero-DCE pretrained weights (Li-Chongyi/Zero-DCE, `Epoch99.pth`, key-renamed to this repo's `DCENet`). `weights/zerodce_synthetic_bootstrap.pth` = our small synthetic-data bootstrap. Fine-tune on LOL with `scripts/train.py --init weights/zerodce.pth` and cite the Zero-DCE authors in your report.

@@ -1,5 +1,5 @@
 """Gradio UI: adaptive low-light restoration with intermediate visualisations, 3-way comparison, ablation, failure notes."""
-import cv2, numpy as np, pandas as pd, gradio as gr
+import os, cv2, numpy as np, pandas as pd, gradio as gr
 from lowlight.pipeline import run, ABLATIONS, get_dl
 from lowlight.metrics import evaluate
 MAXS = 1024
@@ -82,4 +82,5 @@ with gr.Blocks(title='Adaptive Low-Light Restoration') as demo:
         b3.click(ablate, [i3, g3], t3)
     with gr.Tab('Failure analysis'): gr.Markdown(FAIL)
 if __name__ == '__main__':
-    demo.queue(max_size=8).launch(server_name='0.0.0.0', server_port=7860, theme=gr.themes.Soft())
+    # Render (and other PaaS hosts) inject PORT; fall back to 7860 for local/Docker runs.
+    demo.queue(max_size=8).launch(server_name='0.0.0.0', server_port=int(os.environ.get('PORT', 7860)), theme=gr.themes.Soft())
